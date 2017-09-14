@@ -1,0 +1,24 @@
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+div.row{
+  margin-top:30px;
+}
+
+div.tab-content{
+  margin-top:1.5em;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
