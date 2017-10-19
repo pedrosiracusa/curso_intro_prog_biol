@@ -26,29 +26,29 @@
 
     <div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div id="left-half" class="col-md-6">
 				<img src="img/semabio.png" class="img-fluid center-block" />	
 			</div>	
 
 
-			<div class="col-md-6">
+			<div id="right-half" class="col-md-6">
 			
 		
 
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
-					<li class="nav-item">
+					<li class="nav-item" id="nohide">
 						<a class="nav-link active" id="apresentacao-tab" data-toggle="tab" href="#apresentacao" role="tab" aria-controls="apresentacao" aria-expanded="true">Apresentação</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item" id="nohide">
 						<a class="nav-link" id="detalhes-tab" data-toggle="tab" href="#detalhes" role="tab" aria-controls="detalhes" >Detalhes</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="conteudos-tab" data-toggle="tab" href="#conteudos" role="tab" aria-controls="conteudos">Conteúdos</a>
-					</li>
-					<li class="nav-item">
+					<li class="nav-item" id="nohide">
 						<a class="nav-link" id="recursos-tab" data-toggle="tab" href="#recursos" role="tab" aria-controls="recursos">Recursos</a>
 					</li>
 					<li class="nav-item">
+						<a class="nav-link" id="slides-tab" data-toggle="tab" href="#slides" role="tab" aria-controls="slides">Slides</a>
+					</li>
+					<li class="nav-item" id="nohide">
 						<a class="nav-link" id="referencias-tab" data-toggle="tab" href="#referencias" role="tab" aria-controls="referencias">Referências</a>
 					</li>
 				</ul>
@@ -65,6 +65,7 @@
 					</div>
 
 					<div class="tab-pane fade" id="detalhes" role="tabpanel" aria-labelledby="detalhes-tab">
+						<h6>Instrutor</h6><p><a href="https://pedrosiracusa.github.io" target="_blank">Pedro C. de Siracusa</a>, biólogo e mestrando em modelagem computacional.</p><hr/>
 						<h6>Data</h6><p>23 e 24 de Outubro das 19h às 22h30.</p><hr/>
 						<h6>Local</h6> <p>Laboratório de Informática do Instituto de Biologia, Universidade de Brasília.</p><hr/>
 						<h6>Público-alvo</h6><p>Estudantes ou profissionais na área de biologia sem experiência prévia com programação. Pessoas com outras formações são também bem-vindas.</p><hr/>
@@ -113,6 +114,9 @@
 
 
 					<div class="tab-pane fade" id="recursos" role="tabpanel" aria-labelledby="recursos-tab">
+						<div class="alert alert-primary">
+							<h6>Para começar a programar baixe e descompacte <a href="https://github.com/pedrosiracusa/curso_intro_prog_biol/archive/master.zip">este repositório</a> em sua máquina.</h6>
+						</div>
 						<h5 id="aula-1">Aula 1. Conceitos Fundamentais</h5>
 						<p>Embora o campo da computação tenha seus próprios jargões e abstrações, a atividade de programar é de certa forma análoga a montar LEGO! Esta aula traz uma introdução aos conceitos fundamentais na programação, com algumas analogias e exemplos de problemas típicos de um estudante de ciências biológicas. Acesse <a href="notebooks/Aula 1.html" target="_blank">aqui</a> o roteiro da aula.</p>
 						<hr/>
@@ -121,6 +125,8 @@
 						<hr/>
 						<h5 id="desafio">Desafio: O DNA na era do Big Data</h5>
 						<p>Você já deve ter ouvido falar que estamos vivendo na era do "Big Data", um termo que se refere ao enorme conjunto de dados sendo produzido pela humanidade em taxa explosiva, que supera muito nossa capacidade atual para processá-lo, armazená-lo e analisá-lo. Dentre os muitos desafios que emergem deste conceito um se refere ao armazenamento de dados. E se pudéssemos utilizar o DNA para armazenar informação? Que tal tentar contribuir com uma solução computacional para este tópico quente de pesquisa? Acesse <a href="notebooks/desafio_dna.html" target="_blank">aqui</a> o documento com a especificação do problema.</p>
+
+
 					</div>
 
 					<div class="tab-pane fade" id="referencias" role="tabpanel" aria-labelledby="referencias-tab">
@@ -133,22 +139,16 @@
 							<li>McKinney, W., 2012. Python for data analysis: Data wrangling with Pandas, NumPy, and IPython. " O'Reilly Media, Inc.".</li>
 						<ol>
 					</div>
+
+					<div class="tab-pane fade" id="slides" role="tabpanel" aria-labelledby="slides-tab">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe class="embed-responsive-item" src="https://docs.google.com/presentation/d/e/2PACX-1vQmtU0d40mu7xcxVLrNebE1_r4qI56zV4jqUDKIXihaJYoDISL2zcIb_ONSkR0RtVXvcktKOtU2AdhU/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+						</div>
+					</div>
+
+
 				</div>
-
-
-
-
-
-
-
-
-			
 			</div>
-
-
-
-
-			
 		</div>
     </div><!-- /.container -->
 
@@ -160,5 +160,20 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 	 <script src="js/bootstrap.min.js"></script>
  
+
+	<script>
+	$(function(){
+		$("#slides-tab").on('click', function(){
+			$("#left-half").hide();	
+			$("#right-half").removeClass("col-md-6").addClass("col-md-12");
+		});
+
+		$("#nohide a").on('click', function(){
+			$("#left-half").show();	
+			$("#right-half").removeClass("col-md-12").addClass("col-md-6");
+		});
+	});	
+	
+	</script>
 
 </body></html>
