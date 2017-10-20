@@ -1,0 +1,19 @@
+Instruções para configuração do ambiente
+========================================
+
+1. Baixe e descompacte este repositório localmente em sua máquina;
+
+2. Instale a distribuição Anaconda (https://www.anaconda.com/download/), disponível para Windows, Linux ou MacOS. Utilize a versão Python 3. Se estiver em ambiente Windows, o instalador perguntará se você deseja adicionar o Anaconda ao Path do seu sistema operacional. Caso você não tenha um motivo para não adicionar é recomendável que adicione (selecione a opção).
+
+3. Execute o ambiente Jupyter Notebook. Se estiver em ambiente Windows ou MacOS você pode abrir o centro de controle Anaconda. Caso esteja em ambiente linux abra o terminal no diretório em que você extraiu o curso e execute o Jupyter notebook com o comando abaixo:
+
+> jupyter notebook
+
+4. O Jupyter notebook executará em um servidor local em sua máquina. Você deve acessá-lo pelo browser (chrome ou mozilla). O endereço normalmente é
+localhost:8888
+
+5. Com o servidor Jupyter em funcionamento, navegue até o diretório "notebooks" que está dentro do repositório do curso. Nele você encontrará dois arquivos: 
+Aula 1.ipynb 
+Aula 2.ipynb
+
+6. Ao abrir o notebook você já pode escrever e executar código!
