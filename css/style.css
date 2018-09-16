@@ -12,6 +12,10 @@ div.tab-content{
   margin-top:1.5em;
 }
 
+a, a:hover{
+    color:#c52a4a;
+}
+
 
 /* Custom page CSS
 -------------------------------------------------- */
@@ -21,4 +25,20 @@ div.tab-content{
   width: auto;
   max-width: 1200px;
   padding: 0 15px;
+}
+
+
+/* Sticky footer
+----------------------------------- */
+body{
+    margin-bottom:60px;
+}
+
+.footer{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    height:60px;
+    line-height:20px;
+    background-color: white;
 }
