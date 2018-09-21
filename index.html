@@ -46,17 +46,14 @@
                     <li class="nav-item" id="nav-detalhes">
                       <a class="nav-link" href="#detalhes">Detalhes</a>
                     </li>
-                    <li class="nav-item" id="nav-recursos">
-                      <a class="nav-link" href="#recursos">Recursos</a>
-                    </li>
                     <li class="nav-item" id="nav-conteudo">
                       <a class="nav-link" href="#conteudo">Conteúdo</a>
                     </li>
                     <li class="nav-item" id="nav-slides">
                       <a class="nav-link" href="#slides">Slides</a>
                     </li>
-                    <li class="nav-item" id="nav-bibliografia">
-                      <a class="nav-link" href="#bibliografia">Bibliografia</a>
+                    <li class="nav-item" id="nav-recursos">
+                      <a class="nav-link" href="#recursos">Recursos</a>
                     </li>
                 </ul>
             </div>
@@ -124,6 +121,7 @@
             <div id="left-half" class="col-md">
                     <h1>Sobre o curso</h1>
                     <hr/>
+                    <h5>Acesse o <a href="https://github.com/pedrosiracusa/curso_intro_prog_biol" target="_blank">repositório</a> com o material do curso.</h5>
                     <h4>Instrutor</h4>
                     <div class="media" style="padding-left:1em">
                         <img class="mr-3 rounded-circle" src="https://github.com/pedrosiracusa.png?size=80" alt="Generic">
@@ -133,7 +131,7 @@
                         </div>
                     </div>
                     <h4>Linguagem de Programação</h4>
-                    <p style="padding-left:1em"><a href="https://docs.python.org/3" target="_blank">Python v3.x</a>. Recomendamos a instalação <a href="https://www.anaconda.com/download/" target="_blank">Anaconda</a>.</p>
+                    <p style="padding-left:1em"><a href="https://docs.python.org/3" target="_blank">Python v3.x</a>. Recomendamos a distribuição <a href="https://www.anaconda.com/download/" target="_blank">Anaconda</a>.</p>
 
                     <!-- 
                     <h3>Data</h3>
@@ -148,42 +146,12 @@
                     <p style="padding-left:1em"><a href="https://colab.research.google.com/" target="_blank">Google Colab</a>. É necessário apenas ter uma conta na Google.</p>
                     -->
             </div>
-            <div id="right-half" class="col-md-6">
-                 <h1>Conteúdo</h1>
-                 <hr/>
-                    <div style="padding-left:1em">
-						<h5>Dia 1 (duração: 3 horas)</h5>
-						<ol>
-							<li>Introdução</li>	
-							<li>Tipos e Valores</li>	
-							<li>Seu Primeiro Programa
-								<ol type="i">
-									<li>Operadores e Expressões</li>	
-									<li>Variáveis e Atribuições</li>	
-								</ol>
-							</li>	
-							<li>Organizando e estruturando informações
-								<ol type="i">
-									<li>Listas</li>	
-									<li>Dicionários</li>	
-								</ol>	
-							</li>
-                        </ol>
-						<h5>Dia 2 (duração: 3 horas)</h5>
-                        <ol>
-							<li>Adicionando lógica aos seus programas
-								<ol type="i">
-									<li>Expressões condicionais</li>	
-								</ol>	
-							</li>
-							<li>Lidando com comandos repetitivos
-								<ol type="i">
-									<li>Estruturas de repetição: Loops</li>	
-									<li>Funções</li>	
-								</ol>	
-							</li>
-						</ol>						
-					</div>
+							<div id="right-half" class="col-md-6">
+								<h1>Curiosidades</h1>
+								<hr/>
+								<h3>Como foi feita a arte da capa do curso?</h3>
+								<p>Este tipo de arte, em que as palavras são dispostas conforme sua relevância ou frequência em um texto, é conhecido como 'word cloud'. Para fazer a capa deste material utilizamos uma biblioteca escrita em Python, chamada <a href="https://github.com/amueller/word_cloud" target="_blank">word_cloud</a>. Veja <a href="./course_cover/generate_cover.html" target="_blank">aqui</a> o código que gerou a nossa arte.</p>
+							</div>
             </div>
         </div>
     </div>
@@ -212,6 +180,10 @@
                 <h1>Projetos</h1>
                 <hr/>
                 <h5><a href="https://colab.research.google.com/github/pedrosiracusa/curso_intro_prog_biol/blob/master/projetos/baccalc.ipynb" target="_blank">Miniprojeto 1. A Calculadora Bacteriana</a></h5>
+                <p>Construa a calculadora bacteriana, que usa um modelo de crescimento exponencial para estimar o tamanho populacional de uma cultura de bactérias.</p>
+                <h5><a href="https://colab.research.google.com/github/pedrosiracusa/curso_intro_prog_biol/blob/master/projetos/biomol.ipynb" target="_blank">Miniprojeto 2. O exercício de BioMol</a></h5>
+                <p>Você está passando por um semestre apertado, e seu professor de Biologia Molecular passou um exercício super trabalhoso e repetitivo. Sorte sua que você sabe resolvê-lo com programação!</p>
+                <hr/>
                 <h5><a href="https://colab.research.google.com/github/pedrosiracusa/curso_intro_prog_biol/blob/master/projetos/fauna.ipynb" target="_blank">Projeto. Monitoramento de fauna no PNB</a></h5>
                 <p>Você está participando de um levantamento dos mamíferos que ocorrem no Parque Nacional de Brasília e está utilizando armadilhas fotográficas para obter os registros. Use seus novos conhecimentos em programação para gerar mapas de ocorrência das espécies!</p>
                 <h5><a href="https://colab.research.google.com/github/pedrosiracusa/curso_intro_prog_biol/blob/master/projetos/dna.ipynb" target="_blank">Projeto. O DNA na era do Big Data</a></h5>
@@ -221,36 +193,6 @@
       </div> 
     </div>
 
-    <!-- Page: Recursos -->
-    <div class="container">
-    <div id="page-recursos" class="page" style="display:none;">
-      <div class="row">
-            <div id="left-half" class="col-md-6">
-                <h1>Aulas</h1>
-                <hr/>
-                <h5>Aula 1. Conceitos Fundamentais</h5>
-                <p>Embora o campo da computação tenha seus próprios jargões e abstrações, a atividade de programar é de certa forma análoga a montar LEGO! Esta aula traz uma introdução aos conceitos fundamentais na programação, com algumas analogias e exemplos de problemas típicos de um estudante de ciências biológicas. Acesse o roteiro (<a href="notebooks/aula1.html" target="_blank">html</a> | <a href="notebooks/aula1.ipynb" target="_blank">notebook</a>) da aula.</p>
-
-                <h1>Desafios</h1>
-                <hr/>
-                <h5>Projeto 1. Monitoramento de fauna no PNB</h5>
-                <p>Você está participando de um levantamento dos mamíferos que ocorrem no Parque Nacional de Brasília e está utilizando armadilhas fotográficas para obter os registros. Use seus novos conhecimentos em programação para gerar mapas de ocorrência das espécies! Acesse o roteiro (<a href="notebooks/aula2_fauna.html" target="_blank">html</a> | <a href="notebooks/aula2_fauna.ipynb" target="_blank">notebook</a>) do projeto.</p>
-
-                <h5>Projeto 2. O DNA na era do Big Data</h5>
-                <p>Você já deve ter ouvido falar que estamos vivendo na era do "Big Data", um termo que se refere ao enorme conjunto de dados sendo produzido pela humanidade em taxa explosiva, que supera muito nossa capacidade atual para processá-lo, armazená-lo e analisá-lo. Dentre os muitos desafios que emergem deste conceito um se refere ao armazenamento de dados. E se pudéssemos utilizar o DNA para armazenar informação? Que tal tentar contribuir com uma solução computacional para este tópico quente de pesquisa? Acesse o roteiro (<a href="notebooks/aula2_dna.html" target="_blank">html</a> | <a href="notebooks/aula2_dna.ipynb" target="_blank">notebook</a>) do projeto.</p>
-
-
-            </div>
-            <div id="right-half" class="col-md-6">
-                <h1>Curiosidades</h1>
-                <hr/>
-                <h3>Como foi feita a arte da capa do curso?</h3>
-                <p>Este tipo de arte, em que as palavras são dispostas conforme sua relevância ou frequência em um texto, é conhecido como 'word cloud'. Para fazer a capa deste material utilizamos uma biblioteca escrita em Python, chamada <a href="https://github.com/amueller/word_cloud" target="_blank">word_cloud</a>. Veja <a href="./course_cover/generate_cover.html" target="_blank">aqui</a> o código que gerou a nossa arte.</p>
-
-            </div>
-      </div>
-    </div>
-    </div>
 
     <!-- Page: Slides -->
     <div class="container">
@@ -269,12 +211,12 @@
     </div>
     </div>
 
-    <!-- Page: Bibliografia -->
+    <!-- Page: Recursos -->
     <div class="container">
-    <div id="page-bibliografia" class="page" style="display:none;">
+    <div id="page-recursos" class="page" style="display:none;">
       <div class="row">
         <div class="col">
-        <h1 class="text-center">Bibliografia</h1>
+          <h1 class="text-center">Bibliografia</h1>
                 <ol>
                     <li>Barry, P. 2016. <a href="https://www.amazon.com.br/Use-Cabe%C3%A7a-Python-Paul-Barry/dp/857608743X/ref=sr_1_1?ie=UTF8&qid=1508591145&sr=8-1&keywords=use+a+cabe%C3%A7a+python" target="_blank">Head First Python: A Brain-Friendly Guide.</a> " O'Reilly Media, Inc.". <small>[Também disponível em português]</small></li>
                     <li>Severance, C. R. Python for Everybody. Disponível gratuitamente <a href="https://www.py4e.com/" target="_blank">aqui</a>.</li>
@@ -282,7 +224,8 @@
                     <li>Downey, A. 2012. <a href="https://www.amazon.com.br/Pense-em-Python-Allen-Downey/dp/8575225081/ref=sr_1_1?s=books&ie=UTF8&qid=1508591305&sr=1-1&keywords=think+python" target="_blank">Think Python.</a> " O'Reilly Media, Inc.".</li>
                     <li>Model, M.L. 2009. <a href="https://www.amazon.com.br/Bioinformatics-Programming-Using-Python-Mitchell/dp/059615450X/ref=sr_1_1?s=books&ie=UTF8&qid=1508591379&sr=1-1&keywords=bioinformatics+programming+using+python" target="_blank">Bioinformatics Programming Using Python: Practical Programming for Biological Data.</a> " O'Reilly Media, Inc.".</li>
                     <li>McKinney, W., 2012. <a href="https://www.amazon.com.br/Python-Data-Analysis-Wes-Mckinney/dp/1491957662/ref=sr_1_1?s=books&ie=UTF8&qid=1508591435&sr=1-1&keywords=python+for+data+analysis" target="_blank">Python for data analysis: Data wrangling with Pandas, NumPy, and IPython.</a> " O'Reilly Media, Inc.".</li>
-                <ol>
+                </ol>
+
         </div>
       </div>
     </div>
