@@ -119,7 +119,7 @@
     <div id="page-detalhes" class="page" style="display:none;">
         <div class="row">
             <div id="left-half" class="col-md">
-                    <h1>Sobre o curso</h1>
+                    <h2>Sobre o curso</h2>
                     <hr/>
                     <h5>Acesse o <a href="https://github.com/pedrosiracusa/curso_intro_prog_biol" target="_blank">repositório</a> com o material do curso.</h5>
                     <h4>Instrutor</h4>
@@ -131,7 +131,7 @@
                         </div>
                     </div>
                     <h4>Linguagem de Programação</h4>
-                    <p style="padding-left:1em"><a href="https://docs.python.org/3" target="_blank">Python v3.x</a>. Recomendamos a distribuição <a href="https://www.anaconda.com/download/" target="_blank">Anaconda</a>.</p>
+                    <p style="padding-left:1em">Neste curso trabalharemos com a linguagem <a href="https://docs.python.org/3" target="_blank">Python (versão 3)</a>. Recomendamos a instalação a partir da distribuição <a href="https://www.anaconda.com/download/" target="_blank">Anaconda</a>.</p>
 
                     <!-- 
                     <h3>Data</h3>
@@ -145,12 +145,25 @@
                     <h5>Opção 2: Execução em nuvem</h5>
                     <p style="padding-left:1em"><a href="https://colab.research.google.com/" target="_blank">Google Colab</a>. É necessário apenas ter uma conta na Google.</p>
                     -->
-            </div>
-							<div id="right-half" class="col-md-6">
-								<h1>Curiosidades</h1>
+								<h2 class="mt-5">Curiosidades</h2>
 								<hr/>
 								<h3>Como foi feita a arte da capa do curso?</h3>
 								<p>Este tipo de arte, em que as palavras são dispostas conforme sua relevância ou frequência em um texto, é conhecido como 'word cloud'. Para fazer a capa deste material utilizamos uma biblioteca escrita em Python, chamada <a href="https://github.com/amueller/word_cloud" target="_blank">word_cloud</a>. Veja <a href="./course_cover/generate_cover.html" target="_blank">aqui</a> o código que gerou a nossa arte.</p>
+            </div>
+							<div id="right-half" class="col-md-6">
+                <h2>Ambiente</h2>
+                <hr/>
+                <h5>Opção 1: Instalação local</h5>
+                <p style="padding-left:1em">Esta opção é mais avançada, recomendada para os que desejarem configurar o ambiente de programação em sua própria máquina. Para tal, você deverá:</p>
+								<ol>
+										<li>Instalar a distribuição <a href="https://www.anaconda.com/download/">Anaconda</a>, observando os requisitos para seu sistema operacional. A instalação é bem simples: basta fazer o download do instalador e seguir os passos recomendados;</li>
+										<li>Clonar (ou fazer o download) do <a href="https://github.com/pedrosiracusa/curso_intro_prog_biol" target="_blank">repositório do curso</a>, no diretório de sua preferência;</li>
+										<li>No diretório contendo o material do curso, você deverá então inicializar o ambiente <a href="http://jupyter.org/" target="_blank">Jupyter Notebook</a> executando <code>jupyter notebook</code> no Anaconda Prompt (Windows) ou no próprio terminal (Linux). O ambiente Jupyter Notebook executará no próprio navegador, no endereço <code>localhost:8888</code>. Você poderá então navegar, no próprio browser, para o diretório `aulas`, contendo os materiais das aulas.</li>
+								</ol>
+
+								<h5>Opção 2: Execução em nuvem</h5>
+								<p style="padding-left:1em">Esta é a opção mais simples. Usaremos o ambiente <a href="https://colab.research.google.com/" target="_blank">Google Colab</a>, que executa código como serviço em nuvem e, portanto, não exige configuração local. É necessário apenas ter uma conta na Google. Os links para os notebooks estão na aba `Conteúdo` desta página.</p>
+
 							</div>
             </div>
         </div>
@@ -163,7 +176,7 @@
       <div id="page-conteudo" class="page" style="display:none;">
         <div class="row">
             <div id="left-half" class="col-md-6">
-                <h1>Aulas</h1>
+                <h2>Aulas</h2>
                 <hr/>
                 <h5><a href="https://colab.research.google.com/github/pedrosiracusa/curso_intro_prog_biol/blob/master/aulas/aula1.ipynb" target="_blank">Aula 1. Conceitos Fundamentais</a></h5>
                 <p>Introdução aos conceitos mais fundamentais na programação. Você aprenderá como representar diferentes tipos de informação no código, como construir expressões usando operadores e como utilizar variáveis para armazenar resultados de computações.</p>
@@ -177,7 +190,7 @@
                 <p>Computadores são muito eficientes em realizar tarefas bem definidas e repetitivas. Você aprenderá a inserir automação nos seus programas, criando estruturas de repetição (loops).</p>
             </div>
             <div id="right-half" class="col-md-6">
-                <h1>Projetos</h1>
+                <h2>Projetos</h2>
                 <hr/>
                 <h5><a href="https://colab.research.google.com/github/pedrosiracusa/curso_intro_prog_biol/blob/master/projetos/baccalc.ipynb" target="_blank">Miniprojeto 1. A Calculadora Bacteriana</a></h5>
                 <p>Construa a calculadora bacteriana, que usa um modelo de crescimento exponencial para estimar o tamanho populacional de uma cultura de bactérias.</p>
